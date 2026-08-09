@@ -7,12 +7,10 @@
 
     <link rel="stylesheet" href="styles/style.css">
 
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Estedad:wght@100..900&family=Lalezar&family=Parastoo:wght@400..700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Vazirmatn:wght@100..900&display=swap" rel="stylesheet">
-
-   
-
+       <link rel="preconnect" href="https://fonts.googleapis.com">
+       <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+       <link href="https://fonts.googleapis.com/css2?family=Estedad:wght@100..900&family=Lalezar&family=Noto+Sans+Khudawadi&family=Parastoo:wght@400..700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Vazirmatn:wght@100..900&display=swap" rel="stylesheet">
+ 
     <title>Parla</title>
 </head>
 
@@ -27,16 +25,6 @@
    <header>
    <h1 class="name">PARLA</h1>
 
-    <nav>
-    
-        <a >خونه</a>
-        <a >محصولات</a>
-        <a >تخفیف ها</a>
-        <a >تماس با ما </a>
-       
-    </nav>
-
-    
     <div class="search">
         <input type="text" placeholder="جستجو..">
         <img src="image\Untitled-1.png" alt="">
@@ -50,15 +38,28 @@
        </a> 
     </div>
 
+    <nav>
+    
+        <a >خانه</a>
+        <a >تخفیف ها</a>
+        <a >محصولات</a>
+        <a>درباره ما</a>
+        <a >تماس با ما </a>
+       
+    </nav>
+
+    
+    
+
   </header>   
 
  
    
     <section class="hero">
 
-      <picture>
-        <source media="(max-width: 600px)" srcset="image/mobile.jpg">
-        <img class="bg" src="image\background.jpg" alt="">
+      <picture   >
+        <source style="height: fit-content;" media="(max-width: 600px)" srcset="image/mobile.jpg">
+        <img  class="bg" src="image\background.jpg" alt="">
     </picture>
 
     <div class="hero-text">
@@ -73,12 +74,122 @@
         <button>مشاهده کالکشن</button>
     </div>
 
-    
+   
+
+
 
 </section>
 
+       <h1 class="product-categories">دسته بندی محصولات</h1>
+
+    <section  class="category">
+       
+       
+       <figure> 
+
+        <img src="image\bracelet.jpg" alt="">
+        <figcaption>دستبند</figcaption>
+
+       </figure> 
+
+       <figure>
+
+        <img src="image\earrings.jpg" alt="">
+        <figcaption>گوشواره</figcaption>
+
+       </figure>
+       
+       <figure>
+
+        <img src="image\ring.jpg" alt="">
+        <figcaption>انگشتر</figcaption>
+
+       </figure>
+       
+       <figure>
+
+        <img src="image\neck.jpg" alt="">
+        <figcaption>گردنبند</figcaption>
+
+       </figure> 
+        
+        
+        
+    </section> 
 
 
+
+    <section class="off">
+
+        <p class="titr">پیشنهاد <br> شگفت انگیز
+        </p>
+        
+        
+        <img src="image\off.png" alt="" class="percent">
+        
+        <p class="mobile-text">شگفت انگیز</p>
+        
+     <div class="products">
+
+        <figure class="product-off">
+
+        <img src="image\p1-bracelet.jpg" alt="" class="img-o">
+        <figcaption class="p-o">  دستبند ست مهره ای</figcaption>
+         
+        <p class="price">
+            <del class="old-price">790،000 </del>
+            <br>
+            <span class="new-price">500،000 تومان</span>
+        </p>
+
+        
+        </figure>
+
+        <figure class="product-off">
+
+            <img src="image\p2-watch.jpg" alt="" class="img-o">
+            <figcaption class="p-o">ساعت طلایی صفحه بیضی</figcaption>
+
+            <p class="price">
+                <del class="old-price">1،2500،000</del>
+                <br>
+                <span class="new-price">998،000 تومان</span>
+            </p>
+        </figure>
+
+       <figure class="product-off">
+
+            <img src="image\p3-earrings.jpg" alt="" class="img-o">
+            
+            <figcaption class="p-o">گوشواره طرح نخ</figcaption>
+            <p class="price">
+                <del class="old-price">650،000</del>
+                <br>
+                <span class="new-price">320،000 تومان</span>
+            </p>
+        </figure>
+
+
+        <figure class="product-off">
+
+            <img src="image\p4-ring.jpg" alt="" class="img-o">
+            <figcaption class="p-o">انگشتر مدل گره</figcaption>
+            <p class="price">
+                <del class="old-price">590،000</del>
+                <br>
+                <span class="new-price">300،000 تومان</span>
+            </p>
+        </figure>
+
+     </div>  
+     
+    </section>
+
+
+    <section>
+
+        
+    </section>
 
 
 </body>
