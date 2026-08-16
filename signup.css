@@ -47,7 +47,8 @@ label {
 form {
     direction: rtl;
     width: 2000px;
-    padding: 10px;
+    padding-right: 15px;
+    
     box-sizing: border-box;
 }
 
@@ -58,6 +59,7 @@ input {
     width: calc(100% - 20px);
     box-sizing: border-box;
     font-size: 20px;
+    
 }
 
 .welcome {
@@ -100,14 +102,19 @@ input {
 }
 
 button {
-    width: calc(100% - 20px);
+    width: 95%;
     padding: 10px;
-    font-size: 16px;
+    margin-right: 40px;
+    font-size: 18px;
     background-color: #c2b8a7;
     border: #c2b8a7;
     border-radius: 4px;
     font-size: 20px;
 
+}
+
+.button :hover{
+    
 }
  
 
@@ -200,3 +207,5 @@ button {
    }
 
 }
+
+
