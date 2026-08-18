@@ -1390,6 +1390,108 @@ footer {
 
 
 
+
+
+/*--------------------------tablet--------------------------------------*/
+
+
+@media (min-width :768px) {
+
+
+     .more-products {
+        background-color: #c2b8a7;
+        color: black;
+        height: 40px;
+        width: 90px;
+        font-size: 20px;
+        border-radius: 7px;
+        border: none;
+        display: block;
+        margin-right: 620px;
+        margin-bottom: 5px;
+        transform: translateX(335px);
+        transition:  0.2s ease;
+        
+    }
+
+    .more-products:hover {
+         background-color: #b3a995;
+        box-shadow: 0 3px 8px rgba(0, 0, 0, 0.15);
+
+    }
+
+
+     .plan {
+    
+    padding: 60px;
+    text-align: center;
+    display: grid;
+    grid-template-columns: repeat(3 , 250px);
+    justify-content: center;
+    gap: 2px;
+    width:90%;
+    margin-right :200px ;
+    margin-left :200px ;
+    border-radius: 8px;
+    font-family: "Vazirmatn", sans-serif;
+    transition: all 0.3 ease;
+    font-size: 10px;
+   /* background-color: #55623d;*/
+   transform: translateX(60px);
+}
+
+
+
+.card-one {
+    background-color: #bbad96;
+    padding: 30px;
+    line-height: 2;
+    border-radius: 7px;
+    width: 200px;
+    height: 360px;
+    
+    
+    
+}
+
+
+
+.card-two {
+    background-color: #bbad96;
+    padding: 30px;
+    line-height: 2;
+    border-radius: 7px;
+    transform: non;
+    width: 200px;
+    height: 360px;
+}
+
+.card-three {
+    background-color: #bbad96;
+    padding: 30px;
+    line-height: 2;
+    border-radius: 7px;
+    width: 200px;
+    height: 360px;
+    
+}
+
+.card-two h3 {
+    font-size: 25px;
+    padding: 5px;
+    width: fit-content;
+}
+
+.card-two button {
+    transform: translateY(15px);
+}
+
+
+
+}
+
+
+
 @media (min-width :1280px) {
 
 * {
@@ -1489,6 +1591,10 @@ nav a {
     
  }
 
+ nav  :hover {
+    color: #454139;
+ }
+
 .name{
      
     color: white;
@@ -1498,6 +1604,9 @@ nav a {
      font-family: "Playfair Display", serif;
      font-size: 40px;
 }
+
+
+
 
 
 
@@ -1912,9 +2021,9 @@ figcaption {
         border-radius: 7px;
         border: none;
         display: block;
-        margin-right: 620px;
+        margin-right: 950px;
         margin-bottom: 5px;
-        transform: translateY(-12px);
+        align-items: center;
         transition:  0.2s ease;
         
     }
@@ -2066,9 +2175,9 @@ h2 {
     display: grid;
     grid-template-columns: repeat(3 , 300px);
     justify-content: center;
-    gap: 30px;
+    gap: 50px;
     width: 90%;
-    margin-right :170px ;
+    margin-right :190px ;
     border-radius: 8px;
     font-family: "Vazirmatn", sans-serif;
     transition: all 0.3 ease;
@@ -2091,6 +2200,7 @@ h2 {
     padding: 30px;
     line-height: 2;
     border-radius: 7px;
+    width: 300px;
     
 }
 
@@ -2102,6 +2212,7 @@ h2 {
     line-height: 2;
     border-radius: 7px;
    transform: scale(1.1);
+   width: 300px;
 }
 
 .card-three {
@@ -2109,9 +2220,15 @@ h2 {
     padding: 30px;
     line-height: 2;
     border-radius: 7px;
+    width: 300px;
     
 }
 
+
+.card-two h3 {
+    margin: 35px;
+    
+}
 
 
 .plan ul {
@@ -2123,7 +2240,6 @@ h2 {
 
 .plan h3 {
     font-size: 30px;
-    
     transform: translateY(-25px);
     background-color: #627047;
     border-radius: 14px;
@@ -2329,6 +2445,8 @@ footer {
 
 
 }
+
+
 
 
 
