@@ -1922,6 +1922,7 @@ figcaption {
   
     .product-off {
         flex: 0 0 250px;
+        transform: translateY(-5px);
        
         
     }
@@ -1930,21 +1931,25 @@ figcaption {
 
      .off-products::-webkit-scrollbar {
         height: 5px;
+        
    }
 
      .off-products::-webkit-scrollbar-track {
         background: #c2b8a7;
         border-radius: 10px;
+        
    }
 
      .off-products::-webkit-scrollbar-thumb {
         background: #938b7c;
         border-radius: 10px;
+        
     }
 
      .off-products {
          scrollbar-width: thin;
          scrollbar-color: #938b7c #c2b8a7;
+         transform: translateY(-20px);
     }
 
     

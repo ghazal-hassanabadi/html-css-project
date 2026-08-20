@@ -83,12 +83,12 @@ nav a {
     text-align: center;
     font-size: 24px;
     white-space: nowrap;
-       
+    margin-left: 10px;   
      
     color: white;
     order: 1;
     line-height: 1;
-    transform: translateY(-3px);
+    
     font-family: "Playfair Display", serif;
 }
 
@@ -169,29 +169,6 @@ nav {
 }
 
 
-
-
-
-
-.call-us {
-    background-color: #55623d;
-}
-
-.call-us img {
-    width: 50px;
-    height: 90px;
-    
-    
-}
-
-
-
-
-
-
-
-
-
 .end {
         width: 100%;
         min-height: auto;
@@ -269,47 +246,91 @@ nav {
 
     /*------------contact-----------*/
     
+   
 
+    
     .call-us {
         width: 90%;
-        margin-right: 20px;
+        background-color: #55623d;
         margin-bottom: 160px;
+        margin-right: 15px;
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
     }
+
+    
+
+    
 
     .contact-content {
     flex: 1;
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 5px;
-    padding: 30px;
+    padding: 15px;
+    font-size: 10px;
     font-family: "Vazirmatn", sans-serif;
     align-items: center;
     
     
     
     
+    
 }
+
 
 .contact-content h1 {
     grid-column: 1/ -1 ;
     text-align: right;
+     align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 100px;
 }
 
 .contact-content .contact-us {
+    display: none;
+}
+
+.mobile-contact {
     grid-column: 1/-1 ;
     align-items: right;
-    font-size: 17px;
-    padding-left:15px ;
+    font-size: 26px;
+    
     font-size: 16px;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 
 form {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 150px 150px;
     gap: 10px 20px;
     transform: translateX(15px);
     margin-top: 25px;
+    
+}
+form p {
+    margin-right: 20px;
+}
+
+form button {
+    background-color: #969185;
+    border-radius: 5px;
+    border: none;
+    width: 60px;
+    height: 30px;
+    margin-right: 170px;
+    margin-top: 5px;
+    font-family: "Vazirmatn", sans-serif;
+    transition: 0.2s ease;
 }
 
 
@@ -336,6 +357,7 @@ form input:nth-of-type(2) {
 
 label {
     text-align: right;
+    margin-right: 70px;
 }
 
 input {
@@ -343,15 +365,19 @@ input {
     border: none;
     height: 25px;
     padding: 3px;
-    
+    margin-right: 20px;
+    width: 100px;
+    margin-right: 65px;
 }
+
+
 
 
 .contact-content textarea {
     grid-column: 1/-1;
-    width: 100%;
+    margin-right: 80px;
     min-height: 180px;
-    border-radius: 4px;
+    border-radius: 6px;
     border: none;
     padding: 3px;
 }
@@ -360,17 +386,200 @@ input {
 
 .call-us img {
     
-    width: 300px;
+    width: 250px;
     height: 400px;
     object-fit: cover;
     margin-left: auto;
-    margin-left: 30px ;
+    margin-right: 20px;
     border-radius: 7px;
     align-items: center;
-    transform: translateX(-40px);
+    
     padding-top: 60px;
     
 }
+
+
+
+@media (min-width :768px)  and (max-width: 1279px) {
+
+    header {
+    height: 55px;
+    padding: 0 20px;
+    gap: 20px;
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+
+.name {
+    font-size: 30px;
+    margin: 0;
+    transform: none;
+}
+
+
+
+.search {
+    height: 28px;
+    gap: 5px;
+    transform: none;
+    position: static;
+}
+
+.search input {
+    width: 120px;
+    height: 26px;
+    padding: 4px 8px;
+    font-size: 10px;
+}
+
+.search img {
+    width: 18px;
+    height: 18px;
+}
+
+.user-icon {
+    margin-top: 5px;
+}
+
+
+
+header nav {
+    position: static;
+    width: auto;
+    height: auto;
+    padding: 0;
+    margin: 0;
+    gap: 20px;
+    transform: none;
+    background-color: #55623d;
+}
+
+header nav a {
+    font-size: 12px;
+}
+
+
+    /* ---------- CONTACT ---------- */
+    .call-us {
+        width: 90%;
+        height: 550px;
+        margin: 40px auto 120px;
+        
+        display: flex;
+        flex-direction: row-reverse;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .call-us img {
+        width: 40%;
+        height: 550px;
+        object-fit: cover;
+        margin: 0;
+        padding: 0;
+        transform: none;
+    }
+
+    .contact-content {
+        width: 60%;
+        height: 100%;
+        padding: 25px;
+        
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 10px 15px;
+        
+        font-size: 14px;
+    }
+
+    .contact-content h1 {
+        grid-column: 1 / -1;
+        margin: 0;
+        text-align: right;
+    }
+
+    .contact-content .contact-us {
+        display: block;
+        grid-column: 1 / -1;
+        margin: 0;
+        font-size: 14px;
+    }
+
+    .mobile-contact {
+        display: none;
+    }
+
+
+   
+
+    form {
+        grid-column: 1 / -1;
+        width: 100%;
+        margin: 0;
+        
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 10px 15px;
+    }
+
+    form label {
+        margin: 0;
+        font-size: 13px;
+    }
+
+    form input {
+        width: 100%;
+        margin: 0;
+    }
+
+    .contact-content textarea {
+        grid-column: 1 / -1;
+        width: 100%;
+        min-height: 130px;
+        margin: 0;
+        transform: none;
+    }
+
+    form button {
+        margin: 0;
+        transform: none;
+    }
+
+
+    /* ---------- FOOTER ---------- */
+
+    .end {
+        min-height: 260px;
+        padding: 25px 40px;
+    }
+
+    .end h2 {
+        font-size: 48px;
+    }
+
+    .end > p:first-of-type {
+        font-size: 15px;
+    }
+
+    .end h3 {
+        font-size: 16px;
+    }
+
+    .end .contact {
+        font-size: 12px;
+    }
+
+    .end a {
+        font-size: 13px;
+    }
+}
+
+
+
 
 
 
@@ -601,18 +810,26 @@ nav {
     gap: 5px;
     padding: 30px;
     font-family: "Vazirmatn", sans-serif;
+    line-height: 1.6;
     
+}
+
+.mobile-contact {
+    display: none;
 }
 
 .contact-content h1 {
     grid-column: 1/ -1 ;
     text-align: right;
+    margin-left: 500px;
 }
 
 .contact-content .contact-us {
     grid-column: 1/-1 ;
     align-items: right;
     font-size: 17px;
+    display: block;
+    margin-right: 50px;
 }
 
 
@@ -621,6 +838,30 @@ form {
     grid-template-columns: 1fr 1fr;
     gap: 10px 20px;
     margin-right: 16px;
+}
+
+form button {
+    background-color: #969185;
+    border-radius: 5px;
+    border: none;
+    width: 80px;
+    height: 30px;
+    margin-right: 180px;
+    margin-top: 5px;
+    font-family: "Vazirmatn", sans-serif;
+    transition: 0.2s ease;
+    transform: translateX(-60px);
+}
+
+.send{
+    background-color: #969185;
+    transition: 0.3s ease;
+}
+
+.send:hover {
+    background-color: #9b927e;
+    
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.15);
 }
 
 
@@ -647,6 +888,8 @@ form input:nth-of-type(2) {
 
 label {
     text-align: right;
+    font-size: 15px;
+    margin-right: 120px;
 }
 
 input {
@@ -654,6 +897,7 @@ input {
     border: none;
     height: 25px;
     padding: 3px;
+    margin-right: 120px;
 }
 
 
@@ -664,10 +908,14 @@ input {
     border-radius: 4px;
     border: none;
     padding: 3px;
+    transform: translateX(20px);
 }
 
 
-
+.text {
+    margin-right: 65px;
+    font-size: 15px;
+}
 
 
 /*------------footer-------*/
@@ -826,3 +1074,7 @@ footer {
 
 
 }
+
+
+
+
