@@ -1,5 +1,27 @@
+:root {
+    
+    --color-mauve: #969185;
+    --color-taupe-dark: #938b7c;
+    --color-welcome-text: rgb(19, 32, 1);
+    --color-olive: #55623d;
+    --color-olive-light: #6a7656;
+    --color-taupe-light: #c2b8a7;
+    --color-hero-overlay: #c6beb030;
+    --color-figure-shadow: #454139;
+    --color-tan: #bbad96;
+    --color-olive-dark: #627047;
+    --color-olive-hover: #69745a;
+    --color-taupe-hover: #b3a995;
+    --color-hero-btn-hover: aliceblue;
+    --color-white: white;
+    --color-black: black;
+    --shadow-soft: rgba(0, 0, 0, 0.15);
 
-
+    
+    --font-lalezar: "Lalezar", sans-serif;
+    --font-vazirmatn: "Vazirmatn", sans-serif;
+    --font-playfair: "Playfair Display", serif;
+}
 
 * {
     box-sizing: border-box;
@@ -15,15 +37,15 @@ html, body {
 
 body {
     margin: 0;
-    background-color: #969185;
-    font-family: "Lalezar", sans-serif;
+    background-color: var(--color-mauve);
+    font-family: var(--font-lalezar);
     width: 100%;
 
 
 }
 
 .lalezar-regular {
-  font-family: "Lalezar", sans-serif;
+  font-family: var(--font-lalezar);
   font-weight: 50;
   font-style: normal;
 }
@@ -34,8 +56,8 @@ body {
 .welcome {
     text-align: center;
     font-size: 15px;
-    background-color: #938b7c;
-    color: rgb(19, 32, 1);
+    background-color: var(--color-taupe-dark);
+    color: var(--color-welcome-text);
     padding: 5px;
     
 }
@@ -64,7 +86,7 @@ header {
         justify-content: space-between;
         align-items: center;
         gap: 2px;
-        background-color: #55623d;
+        background-color: var(--color-olive);
     
     }
 
@@ -78,7 +100,7 @@ nav {
     top: 100%;
     padding: 0;
     justify-content: center;
-    background-color: #6a7656;
+    background-color: var(--color-olive-light);
         
 } 
 
@@ -90,7 +112,7 @@ nav a {
     line-height: 5px;
     font-size: 12px;
     white-space: nowrap;
-    color: white;
+    color: var(--color-white);
     gap: 10px;
  }
 
@@ -102,11 +124,11 @@ nav a {
     white-space: nowrap;
        
      
-    color: white;
+    color: var(--color-white);
     order: 1;
     line-height: 1;
     transform: translateY(-3px);
-    font-family: "Playfair Display", serif;
+    font-family: var(--font-playfair);
 }
 
 
@@ -134,7 +156,7 @@ nav {
     
     align-items: center;
     padding: 15px;
-    color: white;
+    color: var(--color-white);
 
    
 }
@@ -163,8 +185,8 @@ nav {
      width: 110px;
     height: 28px;
     font-size: 10px;
-    background-color: #c2b8a7;
-    color: black;
+    background-color: var(--color-taupe-light);
+    color: var(--color-black);
     
 }
 .search img {
@@ -173,7 +195,7 @@ nav {
 }
 
 .user-icon{
-    background-color: #55623d;
+    background-color: var(--color-olive);
     border: none;
     position: relative;
     margin-top: 11px;
@@ -181,7 +203,7 @@ nav {
 
 .user-icon:hover {
     opacity: 0.7;
-    background-color: #6a7656;
+    background-color: var(--color-olive-light);
 
 }
 
@@ -207,9 +229,9 @@ nav {
     position: relative;
     padding: 30px 20px;
     text-align: right;
-    background-color: #c6beb030;
+    background-color: var(--color-hero-overlay);
     border-radius: 10px;
-    color: white;
+    color: var(--color-white);
     
     z-index: 2;
     padding: 15px;
@@ -227,7 +249,7 @@ nav {
 .hero-text h1 {
     font-size: 60px;
     margin-bottom: 10px;
-     font-family: "Vazirmatn", sans-serif;
+     font-family: var(--font-vazirmatn);
 }
 
 .hero-text h2 {
@@ -238,7 +260,7 @@ nav {
 .hero-text p {
     font-size: 18px;
     line-height: 2;
-    font-family: "Vazirmatn", sans-serif;
+    font-family: var(--font-vazirmatn);
     font-weight: 200px;
 }
 
@@ -249,11 +271,11 @@ nav {
     border-radius: 25px;
     border: none;
     cursor: pointer;
-    color: black;
+    color: var(--color-black);
 }
 
 .hero-text button:hover {
-    background-color: aliceblue;
+    background-color: var(--color-hero-btn-hover);
 
 }
 
@@ -293,7 +315,7 @@ nav {
     text-align: center;
     margin-top: 100px;
     font-weight: 10px;
-    font-family: "Vazirmatn", sans-serif;
+    font-family: var(--font-vazirmatn);
     font-weight: 400;
     
 }
@@ -303,14 +325,14 @@ nav {
 figure {
     margin: 0;
     text-align: center;
-    background-color: #c2b8a7;
+    background-color: var(--color-taupe-light);
     border-radius: 15px;
     
 }
 
 figure :hover {
     cursor: pointer;
-    box-shadow: #454139;
+    box-shadow: var(--color-figure-shadow);
    
 
 }
@@ -328,7 +350,7 @@ figcaption {
    text-align: center;
     margin-top: 70px;
     font-weight: 10px;
-    font-family: "Vazirmatn", sans-serif;
+    font-family: var(--font-vazirmatn);
     font-weight: 400;
    
     
@@ -344,7 +366,7 @@ figcaption {
     
     width: 90% ;
     height: 430px ;
-    background-color: #55623d;
+    background-color: var(--color-olive);
     gap: 10px;
     margin: 50px auto 50px;
     align-items: center;
@@ -366,7 +388,7 @@ figcaption {
     margin: 0;
     font-size: 30px;
     line-height: 1.2;
-    color: white;
+    color: var(--color-white);
     
 }
 
@@ -377,8 +399,8 @@ figcaption {
 
 .product-off {
         
-        background-color: #c2b8a7;
-        color: black;
+        background-color: var(--color-taupe-light);
+        color: var(--color-black);
         border-radius: 7px;
         height:340px ;
         width:200px ;
@@ -439,18 +461,18 @@ figcaption {
    }
 
      .off-products::-webkit-scrollbar-track {
-        background: #c2b8a7;
+        background: var(--color-taupe-light);
         border-radius: 10px;
    }
 
      .off-products::-webkit-scrollbar-thumb {
-        background: #938b7c;
+        background: var(--color-taupe-dark);
         border-radius: 10px;
     }
 
      .off-products {
          scrollbar-width: thin;
-         scrollbar-color: #938b7c #c2b8a7;
+         scrollbar-color: var(--color-taupe-dark) var(--color-taupe-light);
     }
 
     
@@ -478,7 +500,7 @@ figcaption {
     .titr2{
         text-align: center;
         font-style: 2px;
-        font-family: "Vazirmatn", sans-serif;
+        font-family: var(--font-vazirmatn);
         font-weight: 400;
         
     }
@@ -492,7 +514,7 @@ figcaption {
       
         gap: 25px;
         justify-items: center;
-        background-color: #55623d;
+        background-color: var(--color-olive);
         height: auto;
         padding-right: 20px;
         padding-left: 20px;
@@ -508,7 +530,7 @@ figcaption {
 
     .choes {
 
-        background-color: #969185;
+        background-color: var(--color-mauve);
         border-radius: 5px;
         height: 30px;
         width: 90px;
@@ -518,8 +540,8 @@ figcaption {
     }
 
     .more-products {
-        background-color: #c2b8a7;
-        color: black;
+        background-color: var(--color-taupe-light);
+        color: var(--color-black);
         height: 40px;
         width: 90px;
         font-size: 20px;
@@ -533,8 +555,8 @@ figcaption {
     }
 
     .more-products:hover {
-         background-color: #b3a995;
-        box-shadow: 0 3px 8px rgba(0, 0, 0, 0.15);
+         background-color: var(--color-taupe-hover);
+        box-shadow: 0 3px 8px var(--shadow-soft);
 
     }
 
@@ -543,8 +565,8 @@ figcaption {
         max-width: 300px;
         height: 340px;
         margin: 0;
-        background-color: #c2b8a7;
-        color: black;
+        background-color: var(--color-taupe-light);
+        color: var(--color-black);
         border-radius: 7px;
         box-sizing: border-box;
         overflow: hidden;
@@ -569,9 +591,9 @@ figcaption {
 
 
 .about  {
-    background-color: #55623d;
+    background-color: var(--color-olive);
     
-    color: white;
+    color: var(--color-white);
     width: 90%;
     margin: 30px auto ;
     
@@ -593,7 +615,7 @@ figcaption {
 .about p {
     line-height: 1.8;
     padding: 30px;
-    font-family: "Vazirmatn", sans-serif;
+    font-family: var(--font-vazirmatn);
     font-weight: 400;
     text-align: center;
     margin: 0;
@@ -648,12 +670,12 @@ figcaption {
 .titr3{
     text-align: center;
     font-style: 2px;
-    font-family: "Vazirmatn", sans-serif;
+    font-family: var(--font-vazirmatn);
     font-weight: 400;
 }
 
 h2 {
-     font-family: "Vazirmatn", sans-serif;
+     font-family: var(--font-vazirmatn);
      font-weight: 400;
 }
 
@@ -670,9 +692,9 @@ h2 {
     width: 90%;
     margin-right :100px ;
     border-radius: 8px;
-    font-family: "Vazirmatn", sans-serif;
+    font-family: var(--font-vazirmatn);
     transition: all 0.3 ease;
-   /* background-color: #55623d;*/
+   /* background-color: var(--color-olive);*/
 }
 
 
@@ -687,7 +709,7 @@ h2 {
 }
 
 .card-one {
-    background-color: #bbad96;
+    background-color: var(--color-tan);
     padding: 30px;
     line-height: 2;
     border-radius: 7px;
@@ -697,7 +719,7 @@ h2 {
 
 
 .card-two {
-    background-color: #bbad96;
+    background-color: var(--color-tan);
     padding: 30px;
     line-height: 2;
     border-radius: 7px;
@@ -705,7 +727,7 @@ h2 {
 }
 
 .card-three {
-    background-color: #bbad96;
+    background-color: var(--color-tan);
     padding: 30px;
     line-height: 2;
     border-radius: 7px;
@@ -725,7 +747,7 @@ h2 {
     font-size: 30px;
     
     transform: translateY(-25px);
-    background-color: #627047;
+    background-color: var(--color-olive-dark);
     border-radius: 14px;
     margin-top: 7px;
     padding-bottom: 7px;
@@ -752,7 +774,7 @@ h2 {
 }
 
 .plan button {
-    background-color:  #55623d;
+    background-color:  var(--color-olive);
     border: none;
     padding: 10px;
     font-size: 20px;
@@ -762,8 +784,8 @@ h2 {
 }
 
 .plan button:hover {
-    background-color: #69745a;
-    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.15);
+    background-color: var(--color-olive-hover);
+    box-shadow: 0 3px 8px var(--shadow-soft);
     
 
 }
@@ -771,7 +793,7 @@ h2 {
 .titr4 {
     text-align: center;
     font-style: 2px;
-    font-family: "Vazirmatn", sans-serif;
+    font-family: var(--font-vazirmatn);
     font-weight: 400;
     margin-bottom: 65px;
 }
@@ -780,12 +802,12 @@ h2 {
 
 
 footer {
-    background-color: #938b7c;
+    background-color: var(--color-taupe-dark);
 }
 
 .end {
    
-    color: black;
+    color: var(--color-black);
 
     width: 100%;
     min-height: 300px;
@@ -806,7 +828,7 @@ footer {
 
     text-align: center;
 
-    font-family: "Playfair Display", serif;
+    font-family: var(--font-playfair);
     font-size: 60px;
     margin: 0;
     transform: translateY(-10px);
@@ -818,7 +840,7 @@ footer {
 
     text-align: center;
 
-    font-family: "Vazirmatn", sans-serif;
+    font-family: var(--font-vazirmatn);
     font-size: 17px;
     margin: 5px 0 0;
     transform: translateY(-10px);
@@ -833,7 +855,7 @@ footer {
 
     text-align: center;
 
-    font-family: "Vazirmatn", sans-serif;
+    font-family: var(--font-vazirmatn);
     font-size: 19px;
 
     margin: 0;
@@ -847,7 +869,7 @@ footer {
 
     text-align: center;
 
-    font-family: "Vazirmatn", sans-serif;
+    font-family: var(--font-vazirmatn);
     font-size: 14px;
 
     line-height: 2;
@@ -865,7 +887,7 @@ footer {
     
     text-align: center;
 
-    font-family: "Vazirmatn", sans-serif;
+    font-family: var(--font-vazirmatn);
     font-size: 19px;
 
     margin: 0;
@@ -877,9 +899,9 @@ footer {
 .end a {
     
 
-    color: black;
+    color: var(--color-black);
     text-decoration: none;
-    font-family: "Vazirmatn", sans-serif;
+    font-family: var(--font-vazirmatn);
     font-size: 16px;
     transform: translateY(-30px);
 
@@ -902,14 +924,14 @@ footer {
 }
 
 .end a:hover {
-    color: #c2b8a7;
+    color: var(--color-taupe-light);
 }
 
 
 
 
 .contact i {
-    color: black;
+    color: var(--color-black);
     font-size: 17px;
     margin: 0 3px;
     
@@ -960,7 +982,7 @@ footer {
     .hero-text p {
         font-size: 10px;
         line-height: 1.7;
-        font-family: "Vazirmatn", sans-serif;
+        font-family: var(--font-vazirmatn);
        font-weight: 400;
     }
 
@@ -1020,7 +1042,7 @@ footer {
        margin-top: 20px;
        margin-bottom: 70px;
         font-size: 25px;
-        font-family: "Vazirmatn", sans-serif;
+        font-family: var(--font-vazirmatn);
         font-weight: 400;
         
     }
@@ -1032,7 +1054,7 @@ footer {
         align-items: flex-start;
         justify-content: flex-start;
         font-size: 25px;
-        color: white;
+        color: var(--color-white);
         padding: 10px;
         width:90% ;
         height:400px ;
@@ -1068,8 +1090,8 @@ footer {
     .product-off {
         width: 190px;
         height:299px ;
-        background-color: #c2b8a7;
-        color: black;
+        background-color: var(--color-taupe-light);
+        color: var(--color-black);
         border-radius: 7px;
         margin-top: 20px;
 
@@ -1128,7 +1150,7 @@ footer {
         font-style: 2px;
         font-weight: 50px;
         font-size: 25px;
-        font-family: "Vazirmatn", sans-serif;
+        font-family: var(--font-vazirmatn);
         font-weight: 400;
         transform: translateY(40px);
         margin-top: 30px;
@@ -1146,8 +1168,8 @@ footer {
 
 
     .more-products {
-        background-color: #c2b8a7;
-        color: black;
+        background-color: var(--color-taupe-light);
+        color: var(--color-black);
         height: 40px;
         width: 90px;
         font-size: 20px;
@@ -1185,7 +1207,7 @@ footer {
     }
 
     .titr3 {
-        font-family: "Vazirmatn", sans-serif;
+        font-family: var(--font-vazirmatn);
         font-weight: 400;
         font-size: 25;
         transform: translateY(30px);
@@ -1341,7 +1363,7 @@ footer {
         justify-content: center;
         gap: 35px;
         flex-wrap: nowrap;
-        background-color: #938b7c;
+        background-color: var(--color-taupe-dark);
         transform: translateY(-30px);
     }
 
@@ -1399,8 +1421,8 @@ footer {
 
 
      .more-products {
-        background-color: #c2b8a7;
-        color: black;
+        background-color: var(--color-taupe-light);
+        color: var(--color-black);
         height: 40px;
         width: 90px;
         font-size: 20px;
@@ -1415,8 +1437,8 @@ footer {
     }
 
     .more-products:hover {
-         background-color: #b3a995;
-        box-shadow: 0 3px 8px rgba(0, 0, 0, 0.15);
+         background-color: var(--color-taupe-hover);
+        box-shadow: 0 3px 8px var(--shadow-soft);
 
     }
 
@@ -1433,17 +1455,17 @@ footer {
     margin-right :200px ;
     margin-left :200px ;
     border-radius: 8px;
-    font-family: "Vazirmatn", sans-serif;
+    font-family: var(--font-vazirmatn);
     transition: all 0.3 ease;
     font-size: 10px;
-   /* background-color: #55623d;*/
+   /* background-color: var(--color-olive);*/
    transform: translateX(60px);
 }
 
 
 
 .card-one {
-    background-color: #bbad96;
+    background-color: var(--color-tan);
     padding: 30px;
     line-height: 2;
     border-radius: 7px;
@@ -1457,7 +1479,7 @@ footer {
 
 
 .card-two {
-    background-color: #bbad96;
+    background-color: var(--color-tan);
     padding: 30px;
     line-height: 2;
     border-radius: 7px;
@@ -1467,7 +1489,7 @@ footer {
 }
 
 .card-three {
-    background-color: #bbad96;
+    background-color: var(--color-tan);
     padding: 30px;
     line-height: 2;
     border-radius: 7px;
@@ -1509,14 +1531,14 @@ html, body {
 
 body {
     margin: 0;
-    background-color: #969185;
-    font-family: "Lalezar", sans-serif;
+    background-color: var(--color-mauve);
+    font-family: var(--font-lalezar);
     
 
 }
 
 .lalezar-regular {
-  font-family: "Lalezar", sans-serif;
+  font-family: var(--font-lalezar);
   font-weight: 50;
   font-style: normal;
 }
@@ -1528,8 +1550,8 @@ body {
     width: 100%;
     text-align: center;
     font-size: 21px;
-    background-color: #938b7c;
-    color: rgb(19, 32, 1);
+    background-color: var(--color-taupe-dark);
+    color: var(--color-welcome-text);
     padding: 5px;
 }
 
@@ -1559,7 +1581,7 @@ header {
     position: relative;
     gap: 50px;
     font-size: 20px;
-    background-color: #55623d;
+    background-color: var(--color-olive);
 
     
     
@@ -1575,33 +1597,33 @@ nav {
     height: auto;
     padding: 0; margin: 0;
     order: 3;
-    background-color: #55623d;
+    background-color: var(--color-olive);
     
     
     } 
 
 nav a {
-    color: white;
+    color: var(--color-white);
     text-decoration: none;
     font-size: 16px;
     margin: 0;
     white-space: nowrap;
-    font-family: "Vazirmatn", sans-serif;
+    font-family: var(--font-vazirmatn);
     
     
  }
 
  nav  :hover {
-    color: #454139;
+    color: var(--color-figure-shadow);
  }
 
 .name{
      
-    color: white;
+    color: var(--color-white);
     order: 1;
     line-height: 1;
      transform: translateY(-2px);
-     font-family: "Playfair Display", serif;
+     font-family: var(--font-playfair);
      font-size: 40px;
 }
 
@@ -1630,7 +1652,7 @@ nav {
     gap: 50px;
     align-items: center;
     padding: 15px;
-    color: white;
+    color: var(--color-white);
 
    
 }
@@ -1664,7 +1686,7 @@ nav {
 }
 
 .user-icon{
-    background-color: #55623d;
+    background-color: var(--color-olive);
     border: none;
     position: relative;
     margin-top: 11px;
@@ -1672,7 +1694,7 @@ nav {
 
 .user-icon:hover {
     opacity: 0.7;
-    background-color: #6a7656;
+    background-color: var(--color-olive-light);
 
 }
 
@@ -1694,9 +1716,9 @@ nav {
     position: absolute;
     top: 10%;
     left: 9px;
-    background-color: #c6beb030;
+    background-color: var(--color-hero-overlay);
     border-radius: 10px;
-    color: white;
+    color: var(--color-white);
     width: 400px;
     z-index: 2;
     padding: 15px;
@@ -1713,7 +1735,7 @@ nav {
 .hero-text h1 {
     font-size: 60px;
     margin-bottom: 10px;
-    font-family: "Vazirmatn", sans-serif;
+    font-family: var(--font-vazirmatn);
     font-size: 50px;
 }
 
@@ -1725,7 +1747,7 @@ nav {
 .hero-text p {
     font-size: 14px;
     line-height: 2;
-    font-family: "Vazirmatn", sans-serif;
+    font-family: var(--font-vazirmatn);
     font-weight: 200px;
 }
 
@@ -1736,13 +1758,13 @@ nav {
     border-radius: 25px;
     border: none;
     cursor: pointer;
-    color: black;
-    font-family: "Vazirmatn", sans-serif;
+    color: var(--color-black);
+    font-family: var(--font-vazirmatn);
 
 }
 
 .hero-text button:hover {
-    background-color: aliceblue;
+    background-color: var(--color-hero-btn-hover);
 
 }
 
@@ -1787,7 +1809,7 @@ nav {
     text-align: center;
     margin-top: 70px;
     font-weight: 10px;
-    font-family: "Vazirmatn", sans-serif;
+    font-family: var(--font-vazirmatn);
     font-weight: 400;
     transform: translateY(-100px);
 }
@@ -1797,14 +1819,14 @@ nav {
 figure {
     margin: 0;
     text-align: center;
-    background-color: #c2b8a7;
+    background-color: var(--color-taupe-light);
     border-radius: 15px;
     
 }
 
 figure :hover {
     cursor: pointer;
-    box-shadow: #454139;
+    box-shadow: var(--color-figure-shadow);
    
 
 }
@@ -1822,7 +1844,7 @@ figcaption {
    text-align: center;
     margin-top: 70px;
     font-weight: 10px;
-    font-family: "Vazirmatn", sans-serif;
+    font-family: var(--font-vazirmatn);
     font-weight: 400;
     transform: translateY(-300px);
     
@@ -1838,7 +1860,7 @@ figcaption {
     
     width: 90% ;
     height: 430px ;
-    background-color: #55623d;
+    background-color: var(--color-olive);
     gap: 10px;
     margin: 50px auto 50px;
     align-items: center;
@@ -1860,7 +1882,7 @@ figcaption {
     margin: 0;
     font-size: 30px;
     line-height: 1.2;
-    color: white;
+    color: var(--color-white);
     
 }
 
@@ -1871,8 +1893,8 @@ figcaption {
 
 .product-off {
         
-        background-color: #c2b8a7;
-        color: black;
+        background-color: var(--color-taupe-light);
+        color: var(--color-black);
         border-radius: 7px;
         height:340px ;
         width:200px ;
@@ -1935,20 +1957,20 @@ figcaption {
    }
 
      .off-products::-webkit-scrollbar-track {
-        background: #c2b8a7;
+        background: var(--color-taupe-light);
         border-radius: 10px;
         
    }
 
      .off-products::-webkit-scrollbar-thumb {
-        background: #938b7c;
+        background: var(--color-taupe-dark);
         border-radius: 10px;
         
     }
 
      .off-products {
          scrollbar-width: thin;
-         scrollbar-color: #938b7c #c2b8a7;
+         scrollbar-color: var(--color-taupe-dark) var(--color-taupe-light);
          transform: translateY(-20px);
     }
 
@@ -1977,7 +1999,7 @@ figcaption {
     .titr2{
         text-align: center;
         font-style: 2px;
-        font-family: "Vazirmatn", sans-serif;
+        font-family: var(--font-vazirmatn);
         font-weight: 400;
         transform: translateY(-80px);
         
@@ -1992,7 +2014,7 @@ figcaption {
         transform: translateY(-80px);
         gap: 25px;
         justify-items: center;
-        background-color: #55623d;
+        background-color: var(--color-olive);
         height: auto;
         padding-right: 20px;
         padding-left: 20px;
@@ -2008,7 +2030,7 @@ figcaption {
 
     .choes {
 
-        background-color: #969185;
+        background-color: var(--color-mauve);
         border-radius: 5px;
         height: 30px;
         width: 90px;
@@ -2018,8 +2040,8 @@ figcaption {
     }
 
     .more-products {
-        background-color: #c2b8a7;
-        color: black;
+        background-color: var(--color-taupe-light);
+        color: var(--color-black);
         height: 40px;
         width: 90px;
         font-size: 20px;
@@ -2034,8 +2056,8 @@ figcaption {
     }
 
     .more-products:hover {
-         background-color: #b3a995;
-        box-shadow: 0 3px 8px rgba(0, 0, 0, 0.15);
+         background-color: var(--color-taupe-hover);
+        box-shadow: 0 3px 8px var(--shadow-soft);
 
     }
 
@@ -2044,8 +2066,8 @@ figcaption {
         max-width: 300px;
         height: 340px;
         margin: 0;
-        background-color: #c2b8a7;
-        color: black;
+        background-color: var(--color-taupe-light);
+        color: var(--color-black);
         border-radius: 7px;
         box-sizing: border-box;
         overflow: hidden;
@@ -2070,9 +2092,9 @@ figcaption {
 
 
 .about  {
-    background-color: #55623d;
+    background-color: var(--color-olive);
     height: auto;
-    color: white;
+    color: var(--color-white);
     width: 90%;
     margin: 30px auto ;
     
@@ -2094,7 +2116,7 @@ figcaption {
 .about p {
     line-height: 1.8;
     padding: 30px;
-    font-family: "Vazirmatn", sans-serif;
+    font-family: var(--font-vazirmatn);
     font-weight: 400;
     text-align: center;
     margin: 0;
@@ -2162,12 +2184,12 @@ figcaption {
 .titr3{
     text-align: center;
     font-style: 2px;
-    font-family: "Vazirmatn", sans-serif;
+    font-family: var(--font-vazirmatn);
     font-weight: 400;
 }
 
 h2 {
-     font-family: "Vazirmatn", sans-serif;
+     font-family: var(--font-vazirmatn);
      font-weight: 400;
 }
 
@@ -2184,9 +2206,9 @@ h2 {
     width: 90%;
     margin-right :190px ;
     border-radius: 8px;
-    font-family: "Vazirmatn", sans-serif;
+    font-family: var(--font-vazirmatn);
     transition: all 0.3 ease;
-   /* background-color: #55623d;*/
+   /* background-color: var(--color-olive);*/
 }
 
 
@@ -2201,7 +2223,7 @@ h2 {
 }
 
 .card-one {
-    background-color: #bbad96;
+    background-color: var(--color-tan);
     padding: 30px;
     line-height: 2;
     border-radius: 7px;
@@ -2212,7 +2234,7 @@ h2 {
 
 
 .card-two {
-    background-color: #bbad96;
+    background-color: var(--color-tan);
     padding: 30px;
     line-height: 2;
     border-radius: 7px;
@@ -2221,7 +2243,7 @@ h2 {
 }
 
 .card-three {
-    background-color: #bbad96;
+    background-color: var(--color-tan);
     padding: 30px;
     line-height: 2;
     border-radius: 7px;
@@ -2246,7 +2268,7 @@ h2 {
 .plan h3 {
     font-size: 30px;
     transform: translateY(-25px);
-    background-color: #627047;
+    background-color: var(--color-olive-dark);
     border-radius: 14px;
     margin-top: 7px;
     padding-bottom: 7px;
@@ -2273,7 +2295,7 @@ h2 {
 }
 
 .plan button {
-    background-color:  #55623d;
+    background-color:  var(--color-olive);
     border: none;
     padding: 10px;
     font-size: 20px;
@@ -2283,8 +2305,8 @@ h2 {
 }
 
 .plan button:hover {
-    background-color: #69745a;
-    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.15);
+    background-color: var(--color-olive-hover);
+    box-shadow: 0 3px 8px var(--shadow-soft);
     
 
 }
@@ -2292,7 +2314,7 @@ h2 {
 .titr4 {
     text-align: center;
     font-style: 2px;
-    font-family: "Vazirmatn", sans-serif;
+    font-family: var(--font-vazirmatn);
     font-weight: 400;
     margin-bottom: 65px;
 }
@@ -2301,12 +2323,12 @@ h2 {
 
 
 footer {
-    background-color: #938b7c;
+    background-color: var(--color-taupe-dark);
 }
 
 .end {
    
-    color: black;
+    color: var(--color-black);
 
     width: 100%;
     min-height: 300px;
@@ -2327,7 +2349,7 @@ footer {
 
     text-align: center;
 
-    font-family: "Playfair Display", serif;
+    font-family: var(--font-playfair);
     font-size: 60px;
     margin: 0;
     transform: translateY(-10px);
@@ -2339,7 +2361,7 @@ footer {
 
     text-align: center;
 
-    font-family: "Vazirmatn", sans-serif;
+    font-family: var(--font-vazirmatn);
     font-size: 17px;
     margin: 5px 0 0;
     transform: translateY(-50px);
@@ -2349,7 +2371,7 @@ footer {
     grid-row: 1;
     grid-column: 3;
     text-align: center;
-    font-family: "Vazirmatn", sans-serif;
+    font-family: var(--font-vazirmatn);
     font-size: 19px;
     margin: 0;
     padding: 0;
@@ -2365,7 +2387,7 @@ footer {
 
     text-align: center;
 
-    font-family: "Vazirmatn", sans-serif;
+    font-family: var(--font-vazirmatn);
     font-size: 19px;
     
     margin: 0;
@@ -2379,7 +2401,7 @@ footer {
 
     text-align: center;
 
-    font-family: "Vazirmatn", sans-serif;
+    font-family: var(--font-vazirmatn);
     font-size: 14px;
 
     line-height: 2;
@@ -2397,7 +2419,7 @@ footer {
     
     text-align: center;
 
-    font-family: "Vazirmatn", sans-serif;
+    font-family: var(--font-vazirmatn);
     font-size: 19px;
 
     margin: 0;
@@ -2409,9 +2431,9 @@ footer {
 .end a {
     
 
-    color: black;
+    color: var(--color-black);
     text-decoration: none;
-    font-family: "Vazirmatn", sans-serif;
+    font-family: var(--font-vazirmatn);
     font-size: 16px;
     transform: translateY(-100px);
 
@@ -2435,14 +2457,14 @@ footer {
 }
 
 .end a:hover {
-    color: #c2b8a7;
+    color: var(--color-taupe-light);
 }
 
 
 
 
 .contact i {
-    color: black;
+    color: var(--color-black);
     font-size: 17px;
     margin: 0 3px;
     
@@ -2450,21 +2472,3 @@ footer {
 
 
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
