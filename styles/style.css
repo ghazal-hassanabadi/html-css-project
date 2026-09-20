@@ -1,5 +1,5 @@
 :root {
-    
+    /* Colors */
     --color-mauve: #969185;
     --color-taupe-dark: #938b7c;
     --color-welcome-text: rgb(19, 32, 1);
@@ -17,7 +17,7 @@
     --color-black: black;
     --shadow-soft: rgba(0, 0, 0, 0.15);
 
-    
+    /* Fonts */
     --font-lalezar: "Lalezar", sans-serif;
     --font-vazirmatn: "Vazirmatn", sans-serif;
     --font-playfair: "Playfair Display", serif;
@@ -694,7 +694,7 @@ h2 {
     border-radius: 8px;
     font-family: var(--font-vazirmatn);
     transition: all 0.3 ease;
-   /* background-color: var(--color-olive);*/
+   
 }
 
 
@@ -797,9 +797,6 @@ h2 {
     font-weight: 400;
     margin-bottom: 65px;
 }
-
-/*............footre.............*/
-
 
 footer {
     background-color: var(--color-taupe-dark);
@@ -938,7 +935,7 @@ footer {
 }
 
 
-/*@media (max-width: 600px) {*/
+@media (max-width: 1279px) {
 
     .hero {
         height: 430px;
@@ -958,7 +955,7 @@ footer {
         width: 55%;
         
         margin-top: 50px;
-        transform: translateX(-180px);
+        margin-right: 130px;
         
         
 
@@ -1408,7 +1405,7 @@ footer {
     }
 
 
-/*}*/
+}
 
 
 
@@ -1417,7 +1414,7 @@ footer {
 /*--------------------------tablet--------------------------------------*/
 
 
-@media (min-width :768px) {
+@media (min-width: 768px) {
 
 
      .more-products {
@@ -1483,7 +1480,7 @@ footer {
     padding: 30px;
     line-height: 2;
     border-radius: 7px;
-    transform: non;
+    transform: none;
     width: 200px;
     height: 360px;
 }
@@ -1514,7 +1511,7 @@ footer {
 
 
 
-@media (min-width :1280px) {
+@media (min-width: 1280px) {
 
 * {
     box-sizing: border-box;
@@ -2104,6 +2101,7 @@ figcaption {
     align-items: center;
     padding: 0;
     overflow: hidden;
+    direction: rtl;
      
 
 
@@ -2121,7 +2119,9 @@ figcaption {
     text-align: center;
     margin: 0;
     font-size: 22px;
-    
+    order: 2;
+    width: 100%;
+    box-sizing: border-box;
     transform: translateX(590px);
     
     
@@ -2144,6 +2144,9 @@ figcaption {
     border-radius: 7px;
     object-fit: cover;
     justify-self: start;
+    display: block;
+    align-items: center;
+    order: 1;
     transform: none;
     position: relative;
     transform: translatex(-859px);
@@ -2155,6 +2158,11 @@ figcaption {
     width: 90%;
     height: 500px;
     margin: 30PX auto;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    overflow: hidden;
+    direction: rtl;
 }
 
 
@@ -2165,7 +2173,10 @@ figcaption {
     border-radius: 7px;
     object-fit: cover;
     justify-self: start;
-    
+    padding: 20px;
+    display: block;
+    align-items: center;
+    order: 1;
     position: relative;
     transform: translateY(-190px);
     
@@ -2174,6 +2185,12 @@ figcaption {
 
 .about-reverse p{
     grid-column: 2;
+    order: 2;
+    width: 100%;
+    margin: 0;
+    padding: 20px;
+    box-sizing: border-box;
+    text-align: center;
     transform: translateY(150px);
 }
 
@@ -2338,6 +2355,8 @@ footer {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     align-items: start;
+    text-align: center;
+    gap: 25px;
 }
 
 
@@ -2376,7 +2395,6 @@ footer {
     margin: 0;
     padding: 0;
     margin-top: 35px;
-    transform: none;
     transform: translateY(5px);
 }
 
@@ -2435,9 +2453,26 @@ footer {
     text-decoration: none;
     font-family: var(--font-vazirmatn);
     font-size: 16px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    flex-wrap: nowrap;
     transform: translateY(-100px);
 
     
+}
+
+.end nav {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 35px;
+    flex-wrap: nowrap;
+    background-color: var(--color-taupe-dark);
+    transform: translateY(-30px);
 }
 
 .footer-links {
@@ -2453,7 +2488,6 @@ footer {
 .footer-links a {
     padding: 0;
     margin: 0;
-    ;
 }
 
 .end a:hover {
